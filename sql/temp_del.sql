@@ -1,0 +1,1 @@
+DELETE FROM emprunt_temp WHERE dateDemande < (CURDATE() - INTERVAL 1 DAY);

@@ -1,0 +1,43 @@
+@use "clr";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: blue;
+  height: 5em;
+  display: flex;
+}
+
+ul {
+  padding-inline: 2em;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 3em;
+  background-color: rgb(63, 63, 63);
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+  li {
+    a {
+      text-decoration: none;
+      color: white;
+      &:focus {
+        outline: 1px white;
+        outline-style: dashed;
+      }
+    }
+  }
+  .login {
+    margin-left: auto;
+    background-color: black;
+    padding: 0.5em 2em;
+    border-radius: 2em;
+    transition: all 0.1s;
+  }
+}
